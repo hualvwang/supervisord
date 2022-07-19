@@ -36,7 +36,7 @@ builds:
   - "7"
   hooks:
     post: ./upx.sh
-archive:
+archives:
   name_template: '{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}'
   format: tar.gz
   format_overrides:
@@ -57,7 +57,7 @@ archive:
     freebsd: FreeBSD
 release:
   github:
-    owner: ochinchina
+    owner: hualvwang
     name: supervisord
   draft: false
   prerelease: auto
