@@ -249,7 +249,7 @@ supervisord is compiled inside a Docker image to be used directly inside another
 
 ```Dockerfile
 FROM debian:latest
-COPY --from=ochinchina/supervisord:latest /usr/local/bin/supervisord /usr/local/bin/supervisord
+COPY --from=laoshancun/supervisord:latest /usr/local/bin/supervisord /usr/local/bin/supervisord
 CMD ["/usr/local/bin/supervisord"]
 ```
 
